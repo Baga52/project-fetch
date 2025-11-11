@@ -55,7 +55,6 @@ function renderPosts() {
   }
 
   postsToShow.forEach(post => {
-    // Делаем краткое описание
     let short = post.body.replace(/\n/g, ' ');
     if (short.length > 100) {
       short = short.substring(0, 100) + '...';
